@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">Pen-It</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip">Skip</string>
+    <string name="intro1">Type in your thoughts and stay organised. When in doubt, write it down</string>
+    <string name="intro2">Speak a voice memo on the go and have it automatically transcribed</string>
+    <string name="intro3">Feeling Creative? Draw your ideas and form your notes the way you want</string>
+    <string name="next">next</string>
+    <string name="title_activity_display">DisplayActivity</string>
+
+    <string name="note_not_saved">Note Not Saved</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="add_note">Add Note</string>
+    <string name="please_insert">Please insert title and content</string>
+    <string name="device_not_sup">Device not supported</string>
+    <string name="delete_all_notes">Delete All Notes?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="share_app">Hey! Make Your Day productive with Pen-It App. Download Now : https://play.google.com/store/apps/details?id=com.sankets.penit</string>
+    <string name="all_notes_del">All Notes Deleted</string>
+    <string name="download_link">Shared From Pen-It App. Download Now : https://play.google.com/store/apps/details?id=com.sankets.penit</string>
+    <string name="share_note">Share note</string>
+    <string name="go_ahead_and_add_your_notes">Go Ahead and Add your Notes</string>
+    <string name="item_removed">Note Deleted</string>
+    <string name="undo">Undo</string>
+    <string name="desc"></string>
+    <string name="shareapp">Share this App</string>
+    <string name="error_in_sharing">Error in Sharing</string>
+    <string name="please_try_again">Please Try Again</string>
+    <string name="are_ya_sure">Are you sure you want to delete all notes? This cannot be undone.</string>
+
+
+</resources>

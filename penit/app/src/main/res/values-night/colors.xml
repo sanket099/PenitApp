@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#181818</color>
+    <color name="colorPrimaryDark">#121212</color>
+    <color name="colorAccent">#fff</color>
+    <color name="white">#FFFF</color>
+    <color name="colorBackground">#121212</color>
+    <color name="colorBlack">#212121</color>
+
+    <color name="colorCardBack">#242526</color>
+    <color name="colorCardText">#fff</color>
+    <color name="colorCardHint">#4Dffffff</color>
+
+    <color name="colorButton">#8abaae</color>
+    <color name="colorButtonText">#212121</color>
+
+    <color name="colorDelete">#680101</color>
+
+    <color name="darkWave">#181818</color>
+    <color name="lightWave">#242526</color>
+    <color name="colorText">#fff</color>
+
+    <color name="brush">#fff</color>
+    <color name="brush_lazy">#00B4A3</color>
+</resources>

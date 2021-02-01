@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/coordinator_layout"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/colorBackground"
+        >
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_add"
+
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorButton"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/opensansregular_semibold"
+            android:text="@string/go_ahead_and_add_your_notes" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/iv_add"
+
+            android:visibility="gone"
+            android:padding="10dp"
+
+            android:layout_marginBottom="30dp"
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_add_note"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+
+            android:visibility="visible"
+
+            tools:listitem="@layout/row_layout"
+            android:paddingBottom="20dp"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="280dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:elevation="150dp"
+            android:focusable="true"
+            android:foregroundGravity="center"
+            android:outlineAmbientShadowColor="#212121"
+            app:backgroundTint="@color/colorButton"
+
+
+
+            android:visibility="invisible"
+
+            app:srcCompat="@drawable/ic_round_create_24"
+            app:pressedTranslationZ="12dp"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="190dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:elevation="150dp"
+            android:focusable="true"
+            android:foregroundGravity="center"
+            android:outlineAmbientShadowColor="#212121"
+            app:backgroundTint="@color/colorButton"
+
+            android:visibility="invisible"
+
+            app:srcCompat="@drawable/ic_round_keyboard_voice_24"
+            app:pressedTranslationZ="12dp"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:elevation="150dp"
+            android:focusable="true"
+            android:foregroundGravity="center"
+            android:outlineAmbientShadowColor="#212121"
+            app:backgroundTint="@color/colorButton"
+
+            android:visibility="invisible"
+
+            app:srcCompat="@drawable/ic_round_text_fields_24"
+            app:pressedTranslationZ="12dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:elevation="150dp"
+            android:focusable="true"
+            android:foregroundGravity="center"
+            android:outlineAmbientShadowColor="#212121"
+            app:backgroundTint="@color/colorButton"
+
+
+            app:srcCompat="@drawable/ic_round_add_24"
+            app:pressedTranslationZ="12dp"/>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
