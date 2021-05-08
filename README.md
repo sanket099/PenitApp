@@ -1,5 +1,7 @@
 # Penit
 
+Hosted at https://play.google.com/store/apps/details?id=com.sankets.penit
+
 > If you aren't taking notes, you aren't learning.
 
 **Penit** is a modern Note Taking App. 
