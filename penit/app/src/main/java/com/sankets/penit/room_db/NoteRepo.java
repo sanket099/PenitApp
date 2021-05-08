@@ -9,8 +9,8 @@ import java.util.List;
 
 public class NoteRepo {
 
-    private NoteDao noteDao;
-    private LiveData<List<Note>> allNotes;
+    private final NoteDao noteDao;
+    private final LiveData<List<Note>> allNotes;
 
     public NoteRepo(Application application) { //application is subclass of context
         NoteDatabase database = NoteDatabase.getInstance(application);
@@ -40,7 +40,7 @@ public class NoteRepo {
     //room doesnt allow db op in main thread so we'll do this in background by async tasks
     private static class InsertNoteAsyncTask extends AsyncTask<Note, Void, Void> { //static : doesnt have reference to the
         // repo itself otherwise it could cause memory leak!
-        private NoteDao noteDao;
+        private final NoteDao noteDao;
         private InsertNoteAsyncTask(NoteDao noteDao) {
             this.noteDao = noteDao;
         }
@@ -51,7 +51,7 @@ public class NoteRepo {
         }
     }
     private static class UpdateNoteAsyncTask extends AsyncTask<Note, Void, Void> {
-        private NoteDao noteDao;
+        private final NoteDao noteDao;
         private UpdateNoteAsyncTask(NoteDao noteDao) { //constructor as the class is static
             this.noteDao = noteDao;
         }
@@ -62,7 +62,7 @@ public class NoteRepo {
         }
     }
     private static class DeleteNoteAsyncTask extends AsyncTask<Note, Void, Void> {
-        private NoteDao noteDao;
+        private final NoteDao noteDao;
         private DeleteNoteAsyncTask(NoteDao noteDao) {
             this.noteDao = noteDao;
         }
@@ -73,7 +73,7 @@ public class NoteRepo {
         }
     }
     private static class DeleteAllNotesAsyncTask extends AsyncTask<Void, Void, Void> {
-        private NoteDao noteDao;
+        private final NoteDao noteDao;
         private DeleteAllNotesAsyncTask(NoteDao noteDao) {
             this.noteDao = noteDao;
         }
